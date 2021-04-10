@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Bosh sahifa</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="staff.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Xodimlar</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Rasmlar</a>
+      <a href="news.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> Yagiliklar</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="staff.html" onclick="w3_close()" class="w3-bar-item w3-button">Xodimlar</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">Rasmlar</a>
+  <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button">Yagiliklar</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+
+<!-- Gallery Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Rasmlar</h3>
+  <p class="w3-center w3-large">Bizning rasmlardan baxramand bo`ling</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://im0-tub-com.yandex.net/i?id=1af7f2668ac5e092d72a9e10562e2576&n=13&exp=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://armeniatoday.news/wp-content/uploads/2020/02/%D4%B5%D6%80%D5%A5%D5%AD%D5%A1%D5%B6%D5%A5%D6%80%D5%AB-%D5%AD%D5%B6%D5%A1%D5%B4%D6%84-300x200.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://gazeta-pedagogov.ru/wp-content/uploads/2019/08/minprosveshheniya-programma-zemskij-uchitel-ne-budet-rasprostranena-na-rabotnikov-detsadov-300x200.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://442fz.volganet.ru/upload/resize_cache/iblock/a27/300_200_1/kartinka-lager.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://www.franchisezing.com/franchise/wp-content/uploads/2016/10/Preschool-1-300x200.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://im0-tub-com.yandex.net/i?id=e4ae747ba895060cb9cbae2c592d1f63&n=13&exp=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://www.segodnya.ua/img/article/11874/38_main.1541782884.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6 mb-4">
+      <img src="https://im0-tub-com.yandex.net/i?id=b75c3a893b2c3b7355af59ae93ba3ab2&n=13&exp=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+      <div class="row">
+      <a href="index.html" class="offset-8 col-3 btn btn-primary float-right mt-5">
+        Ortga
+      </a>
+    </div>
+    </div>    
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <p>Powered by student of <a href="https://ba.uz/"target="_blank" class="w3-hover-text-green ">Bobir Alikhonov Tech Academy</a><br><a href="https://github.com/York0000" target="_blank" class="w3-hover-text-green ">Bakhodirov Yorkinjon</a></p>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-vk w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-envelope w3-hover-opacity"></i>
+    <i class="fa fa-telegram w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
